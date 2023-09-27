@@ -1,7 +1,6 @@
 import gulp from 'gulp';
 import fs from 'fs';
 import gulpPug from 'gulp-pug';
-import gulpSize from 'gulp-size';
 import plumber from "gulp-plumber";
 import * as utils from './utils.js';
 
