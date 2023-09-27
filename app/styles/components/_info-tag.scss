@@ -1,6 +1,4 @@
 .info-tag-container {
-  //margin-bottom: spacing(1);
-
   .fa {
     @include font-size(3.5);
     width: 12px;
@@ -23,15 +21,6 @@
     &.fa-desktop {
       @include font-size(2.75);
     }
-
-    //&.fa-arrow-up-right-from-square {
-    //  width: auto;
-    //  font-size: inherit;
-    //  vertical-align: text-top;
-    //  @media print {
-    //    display: none !important;
-    //  }
-    //}
   }
 
   .info-text {

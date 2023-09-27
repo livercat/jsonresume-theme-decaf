@@ -1,5 +1,13 @@
 .container {
-  padding-top: spacing(1);
+  margin-bottom: 15px;
+}
+
+.section-header {
+  margin-top: 10px;
+}
+
+.resume-header {
+  padding-bottom: 15px;
 }
 
 .keyline {
@@ -18,18 +26,6 @@
 
 .clearfix {
   @include clearfix();
-}
-
-.header_pic {
-  margin-top: -15px;
-  margin-right: 10px;
-
-  img {
-    height: $profile-pic-size;
-    width: $profile-pic-size;
-    border-radius: 10%;
-    border: 2px solid $primary-color;
-  }
 }
 
 .summary {

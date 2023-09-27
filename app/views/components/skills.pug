@@ -1,0 +1,10 @@
+if resume.skills && resume.skills.length
+  .container
+    +title('Skills', 'fa-light fa-screwdriver-wrench')
+    .skills-container
+      each skillGroup in resume.skills
+        h4.bold #{skillGroup.name} &mdash; #{skillGroup.level}
+        if skillGroup.keywords && skillGroup.keywords.length
+          ul
+            each skill in skillGroup.keywords
+              li #{skill}

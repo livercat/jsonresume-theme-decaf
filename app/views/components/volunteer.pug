@@ -1,14 +1,13 @@
 if resume.volunteer && resume.volunteer.length
   .container.volunteer-container
-    +title("Volunteer")
+    +title("Volunteer", 'fa-light fa-handshake-angle')
     each volunteer in resume.volunteer
       section.item
-        +section-header(volunteer.organization)
-        if volunteer.position
-          h5 #{volunteer.position}
+        +section-header(volunteer.website, volunteer.organization, volunteer.startDate, volunteer.endDate, null, volunteer.position)
         if volunteer.summary
           p.summary #{volunteer.summary}
-        if volunteer.highlights.length
+        if volunteer.highlights && volunteer.highlights.length
           ul
             each highlight in volunteer.highlights
               li #{highlight}
+.

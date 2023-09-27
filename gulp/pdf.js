@@ -9,8 +9,7 @@ export const htmlToPdf = async () =>
       const browser = await puppeteer.launch({headless: "new"});
       const page = await browser.newPage();
       await page.goto("file://" + file.path);
-      await page._client().send('Animation.setPlaybackRate', { playbackRate: 1000 });
-      await page.waitForTimeout(1000);
+      await new Promise(r => setTimeout(r, 1000));
       // https://pptr.dev/api/puppeteer.pdfoptions
       await page.pdf({
         path: 'public/' + path.basename(file.basename, ".html") + ".pdf",
@@ -19,7 +18,7 @@ export const htmlToPdf = async () =>
         format: 'Letter'
       });
 
-      await page.screenshot({ path: 'public/' + path.basename(file.basename, ".html") + ".png", fullPage: true});
+      // await page.screenshot({ path: 'public/' + path.basename(file.basename, ".html") + ".png", fullPage: true});
 
       await browser.close();
       resolve();

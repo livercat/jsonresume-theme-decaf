@@ -2,10 +2,6 @@ import gulp from 'gulp'
 import browserSync from 'browser-sync';
 import tasks from './gulp/index.js';
 
-
-import { resumePath } from './gulp/resume.js'
-import { imagesPath } from './gulp/images.js'
-
 const bs = browserSync.create("resume");
 
 
@@ -15,15 +11,11 @@ const reload = done => {
 }
 
 const watch = () => {
-  gulp.watch(
-    imagesPath,
-    gulp.series(tasks.images, gulp.parallel(tasks.pdf, reload))
-  );
   gulp.watch('app/styles/**/*.scss', gulp.series(tasks.styles, gulp.parallel(tasks.pdf, reload)));
   gulp.watch(
     [
       'app/views/**/*.pug',
-      resumePath,
+      'resume.json',
       'app/pug_utils.js'
     ],
     gulp.series(tasks.resume, tasks.pdf, reload)

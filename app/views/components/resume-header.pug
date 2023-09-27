@@ -3,8 +3,7 @@ if resume.basics
     .profile-header.pull-left
       h1 #{resume.basics.name}
       h2 #{resume.basics.label}
-    .header_pic.pull-right.animate__animated.animate__pulse.animate__infinite.animate__slower
-      if resume.basics.picture
-        img.profile-pic.hide-on-print(src=resume.basics.picture alt="picture")
-      if resume.basics.qr_code
-        img.qr-code.show-on-print(src=resume.basics.qr_code alt="qr-code")
+    if resume.basics.picture
+      img.profile-pic.hide-on-print(src=resume.basics.picture alt="picture")
+    if resume.basics.qr_code
+      img.qr-code.show-on-print(src=resume.basics.qr_code alt="qr-code")

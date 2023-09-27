@@ -1,7 +1,7 @@
 mixin section-header(website, name, startDate, endDate, icon, subhead)
-  .section-header(style="display: flex; align-items: center; justify-content: space-between;")
+  .section-header
     if name
-      div(style="display: flex; align-items: center;")
+      div
         if icon
           div.section_icon
             img(src=icon)
@@ -13,13 +13,12 @@ mixin section-header(website, name, startDate, endDate, icon, subhead)
                 i.fa.fa-arrow-up-right-from-square(aria-hidden="true")
             else
               | #{name}
-          h4.section_subtitle
+          h4.bold().section_subtitle
             | #{subhead}
-    h5.italic()
-      if startDate
-        span.startDate #{startDate}
-        if endDate
-          span.endDate
-            |  - #{endDate}
-        else
-          span.endDate  - Present
+          h6.italic()
+            span.startDate #{startDate}
+            if endDate
+              span.endDate
+                |  - #{endDate}
+            else
+              span.endDate  - Present

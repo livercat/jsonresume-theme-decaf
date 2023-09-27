@@ -2,7 +2,7 @@ if resume.work && resume.work.length
   .container.work-container
     +title('Experience', 'fa-light fa-briefcase')
     each work, idx in resume.work
-      section.item.animate__animated.animate__fadeInLeft(class=`animate__delay-${idx > 5 ? 5 : idx}s`)
+      div.item
         +section-header(work.website, work.name, work.startDate, work.endDate, work.icon, work.position)
         if work.summary
           p.summary= work.summary

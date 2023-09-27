@@ -1,10 +1,10 @@
 {
-  "author": "DJ Daniels",
-  "name": "jsonresume-catalyst-theme",
-  "description": "Catalyst theme for JSON Resume",
+  "author": "Dmitriy Safonov",
+  "name": "jsonresume-theme-decaf",
+  "description": "Decaf theme for JSON Resume",
   "private": true,
   "type": "module",
-  "version": "2.0.1",
+  "version": "1.0.0",
   "keywords": [
     "json",
     "resume",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/TheBranchDriftCatalyst/jsonresume-theme-catalyst"
+    "url": "https://github.com/livercat/jsonresume-theme-decaf"
   },
   "license": "MIT",
   "scripts": {
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@types/gulp": "^4.0.10",
+    "@types/node": "^20.7.0",
     "browser-sync": "^2.29.1",
     "del": "^7.0.0",
     "dotenv": "^16.0.3",
@@ -31,7 +32,6 @@
     "gulp-cache": "^1.1.3",
     "gulp-cli": "^2.2.0",
     "gulp-cssimport": "^7.0.0",
-    "gulp-imagemin": "^8.0.0",
     "gulp-plumber": "^1.1.0",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
@@ -41,11 +41,10 @@
     "gulp-typescript": "^6.0.0-alpha.1",
     "jest": "^29.5.0",
     "pug": "^3.0.2",
-    "puppeteer": "^19.11.1",
+    "puppeteer": "^21.3.5",
     "sass": "^1.62.0",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.4",
-    "yaml": "^2.2.2"
+    "typescript": "^5.0.4"
   },
   "dependencies": {
     "luxon": "^3.3.0",

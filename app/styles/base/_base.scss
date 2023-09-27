@@ -1,13 +1,7 @@
-:root {
-  --animate-delay: 0.25s;
-}
-
 body {
   @include lato();
 
   background: $gray-lightest;
-  //background: black;
-  //margin: 50px 0 100px;
   letter-spacing: .5px;
   color: $secondary-color;
 }
@@ -25,13 +19,13 @@ h1 {
   @include josefin(700);
   @include font-size(6);
   letter-spacing: 1px;
-  //margin-bottom: spacing(1);
 }
 
 h2 {
   @include josefin(300);
-  @include font-size(4);
+  @include font-size(5);
   letter-spacing: .5px;
+  font-weight: 300;
 }
 
 h3 {
@@ -40,7 +34,7 @@ h3 {
   letter-spacing: .4px;
 
   &.bold {
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
@@ -49,7 +43,7 @@ h4 {
   @include font-size(3);
 
   &.bold {
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
@@ -65,6 +59,10 @@ h5 {
 h6 {
   @include lato();
   @include font-size(2.5);
+
+  &.italic {
+    font-style: italic;
+  }
 }
 
 a {
@@ -98,12 +96,7 @@ em {
 }
 
 ul {
-  //margin: spacing(1) 0 0;
-  -webkit-padding-start: spacing(4);
-
-  li {
-    //padding-left: spacing(.5);
-  }
+  padding-left: spacing(4);
 
   &.minimal {
     list-style: none;
@@ -132,6 +125,7 @@ ul {
     i {
       margin-right: spacing(1.5);
     }
+    font-weight: 400;
   }
 }
 

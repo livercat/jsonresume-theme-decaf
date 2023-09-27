@@ -1,6 +1,5 @@
 import clean from './clean.js';
 import styles from './styles.js';
-import images from './images.js';
 import resume from './resume.js';
 import build from './build.js';
 import dotfiles from './dotfiles.js';
@@ -12,7 +11,6 @@ export default {
   typescript,
   clean,
   styles,
-  images,
   resume,
   dotfiles,
   pdf

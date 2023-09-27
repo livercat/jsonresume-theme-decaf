@@ -4,39 +4,16 @@ import gulpPug from 'gulp-pug';
 import gulpSize from 'gulp-size';
 import plumber from "gulp-plumber";
 import * as utils from '../app/pug_utils.js';
-import * as YAML from "yaml";
 // import memo from 'lodash';
-
-const resumePathWithinAssetsDir =  '/data/resume.yml';
-
-const getResumeYmlPath = () => {
-  if (process.env.CATALYST_RESUME_ASSETS_DIR
-      && fs.existsSync(process.env.CATALYST_RESUME_ASSETS_DIR + resumePathWithinAssetsDir)
-  ){
-    return process.env.CATALYST_RESUME_ASSETS_DIR + resumePathWithinAssetsDir
-  } else {
-    return `./resume-assets${resumePathWithinAssetsDir}`
-  }
-}
-
-export const resumePath = getResumeYmlPath();
 
 const getResumeData = (path) => {
   const file = fs.readFileSync(path, "utf8")
-  return YAML.parse(file);
+  return JSON.parse(file);
 }
 
 export const resume = async () => {
 
-  const resumePath = getResumeYmlPath();
-
-  console.log("**************************************")
-  console.log("Resume ENV Variables")
-  console.log(`CATALYST_RESUME_ASSETS_DIR: ${process.env.CATALYST_RESUME_ASSETS_DIR || 'NOT SET'}`)
-  console.log(`USING RESUME.YML FROM: ${resumePath}`)
-  console.log("**************************************")
-
-  const resume = getResumeData(getResumeYmlPath());
+  const resume = getResumeData("resume.json");
 
   return new Promise((resolve, reject) => {
     gulp.src('./app/views/*.pug')
