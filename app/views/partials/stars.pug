@@ -2,4 +2,3 @@ mixin stars(label)
   span.stars_span
     each rate, idx in getStarsForLangFluency(label)
       span.star
-        i.fas.fa-star.rate.w3-steel-grey.animate__animated.animate__fadeInLeft(class=`animate__delay-${idx > 5 ? 5 : idx}s`)

@@ -1,14 +1,11 @@
 if resume.interests && resume.interests.length
   .container.interests-container
     +title("Interests", 'fa-light fa-heart')
-    //include goodreads_quote
-    //include goodreads_challenge
-    include goodreads_favorites
-    // each interest in resume.interests
-    //   section.item
-    //     if interest.name
-    //       h4.bold #{interest.name}
-    //     if interest.keywords.length
-    //       ul.minimal
-    //         each keyword in interest.keywords
-    //           li #{keyword}
+    each interest in resume.interests
+      section.item
+        if interest.name
+          h4.bold #{interest.name}
+        if interest.keywords
+          ul.minimal
+            each keyword in interest.keywords
+              li #{keyword}

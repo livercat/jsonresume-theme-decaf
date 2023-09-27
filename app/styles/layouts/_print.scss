@@ -1,9 +1,7 @@
 @media print {
   body {
     margin: 0;
-    -webkit-print-color-adjust: exact;
-    --animate-duration: 0s !important;
-    --animate-delay: 0s !important;
+    // print-color-adjust: exact;
   }
 
   .page {
@@ -13,21 +11,14 @@
     margin: 0 8px 0 8px;
     //padding: 36px 0 30px;
     box-shadow: none;
-
-    .resume-header,
-    .resume-content {
-      //padding: 0 11px 0 16px;
-    }
   }
 
-  .container {
+  .summary {
+    width: 54%;
+  }
+
+  .item {
     page-break-inside: avoid;
-  }
-
-  .work-container {
-    .item {
-      page-break-inside: avoid;
-    }
   }
 
   .fa-arrow-up-right-from-square {

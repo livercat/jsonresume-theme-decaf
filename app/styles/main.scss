@@ -16,20 +16,7 @@
 @import 'components/info-tag';
 @import 'components/references';
 @import 'components/education';
-@import 'components/skill-bars';
-@import 'components/goodreads-overrides';
-
-span.stars_container {
-  span.stars_span {
-    margin-bottom: 34px;
-    margin-left: 6px;
-
-    span.star {
-      margin: 1px;
-
-    }
-  }
-}
+@import 'components/skills';
 
 .section-header {
   .section_icon {
@@ -39,16 +26,6 @@ span.stars_container {
     img {
       width: 20px;
       height: 20px;
-    }
-  }
-
-  .section_text {
-    .section_title {
-
-    }
-
-    .section_subtitle {
-
     }
   }
 }
