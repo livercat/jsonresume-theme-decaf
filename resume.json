@@ -30,6 +30,8 @@
     "label": "Software Developer",
     "email": "disafonov@gmail.com",
     "summary": "I'm a software developer who can design, build, test, document, and maintain highly-available and scalable systems. I specialize in backend development and dev-tools, and I have first-hand experience with QA, front-end dev, DevOps/SRE, software architecture, and technical writing.\\nI'm used to working in small efficient teams, so I'm comfortable with wearing multiple hats.\\nI value transparent processes, collaboration, and maintainable code, and strive to foster an open and honest work environment.",
+    "tagline": "Dmitriy Safonov's CV. Experienced software developer / SRE based in Vancouver, Canada. Trans rights are human rights.",
+    "og_image": "https://raw.githubusercontent.com/livercat/livercat.github.io/main/og_image.jpg",
     "location": {
       "city": "Vancouver",
       "countryCode": "CA"
