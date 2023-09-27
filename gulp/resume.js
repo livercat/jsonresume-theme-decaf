@@ -33,12 +33,8 @@ export const resume = async () => {
       )
       .pipe(gulp.dest('public/'))
       .on('finish', async (...args) => {
-        gulp.src('public/**/*').pipe(gulpSize({
-          title: 'build',
-          gzip: true
-        }));
         gulp.src('./app/images/*.*')
-          .pipe(gulp.dest('./public/'))
+          .pipe(gulp.dest('./public/'));
         resolve(...args)
       })
       .on('error', reject);

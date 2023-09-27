@@ -30,7 +30,6 @@
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
-    "gulp-size": "^4.0.1",
     "gulp-tap": "^2.0.0",
     "pug": "^3.0.2",
     "puppeteer": "^21.3.5",
