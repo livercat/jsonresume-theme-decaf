@@ -3,16 +3,16 @@ import fs from 'fs';
 import gulpPug from 'gulp-pug';
 import gulpSize from 'gulp-size';
 import plumber from "gulp-plumber";
-import * as utils from '../app/pug_utils.js';
+import * as utils from './utils.js';
 
 const getResumeData = (path) => {
   const file = fs.readFileSync(path, "utf8")
   return JSON.parse(file);
 }
 
-export const resume = async () => {
+export const resumeData = getResumeData("resume.json");
 
-  const resume = getResumeData("resume.json");
+export const resume = async () => {
 
   return new Promise((resolve, reject) => {
     gulp.src('./app/views/*.pug')
@@ -23,7 +23,7 @@ export const resume = async () => {
       .pipe(
         gulpPug({
           locals: {
-            resume,
+            resume: resumeData,
             ...utils
           },
           pretty: true,

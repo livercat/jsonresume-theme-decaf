@@ -128,10 +128,6 @@ a {
 a:hover {
   color: #2895F1;
 }
-a .fa-arrow-up-right-from-square {
-  font-size: 6px !important;
-  vertical-align: text-top !important;
-}
 
 p,
 li {
@@ -219,8 +215,6 @@ ul.two-column li {
 
 /* Layouts */
 .page {
-  transform: scale(1.6);
-  transform-origin: 0 0;
   background: white;
   width: 795.6px;
   min-height: 1029.6px;
@@ -250,6 +244,12 @@ ul.two-column li {
   margin-bottom: 0;
 }
 
+a {
+  text-decoration-line: underline;
+  text-decoration-style: line;
+  text-decoration-thickness: 0.5px;
+}
+
 @media print {
   body {
     margin: 0;
@@ -264,7 +264,7 @@ ul.two-column li {
   .item {
     page-break-inside: avoid;
   }
-  .fa-arrow-up-right-from-square {
+  .hide-on-print {
     display: none !important;
   }
   .section-header span.section_text h3.section_title {

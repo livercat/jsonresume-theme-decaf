@@ -16,7 +16,7 @@ const watch = () => {
     [
       'app/views/**/*.pug',
       'resume.json',
-      'app/pug_utils.js'
+      'gulp/*.js'
     ],
     gulp.series(tasks.resume, tasks.pdf, reload)
   );

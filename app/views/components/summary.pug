@@ -2,4 +2,4 @@ if resume.basics
   if resume.basics.summary
     .container.summary-container
       +title("Summary", 'fa-light fa-bolt-lightning')
-      p.summary #{resume.basics.summary}
+      p.summary !{resume.basics.summary.replaceAll('\\n', '<br>')}

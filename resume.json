@@ -29,7 +29,7 @@
     "name": "Dmitriy Safonov",
     "label": "Software Developer",
     "email": "disafonov@gmail.com",
-    "summary": "I'm a software developer who can design, build, test, document, and maintain highly-available and scalable systems. I specialize in backend development and dev-tools, and I have first-hand experience with QA, front-end dev, DevOps/SRE, software architecture, and technical writing. I'm used to working in small efficient teams, so I'm comfortable with wearing multiple hats. I value transparent processes, collaboration, and maintanable code, and strive to foster an open and honest work environment.",
+    "summary": "I'm a software developer who can design, build, test, document, and maintain highly-available and scalable systems. I specialize in backend development and dev-tools, and I have first-hand experience with QA, front-end dev, DevOps/SRE, software architecture, and technical writing.\\nI'm used to working in small efficient teams, so I'm comfortable with wearing multiple hats.\\nI value transparent processes, collaboration, and maintainable code, and strive to foster an open and honest work environment.",
     "location": {
       "city": "Vancouver",
       "countryCode": "CA"
@@ -49,7 +49,7 @@
   },
   "work": [
     {
-      "summary": "Yandex is one of the largest Russian tech companies which has products ranging from search engine and analytics to ridesharing and delivery apps. I worked on the internal cloud infrastructure, building a company-wide platform for software deployment and network configuration, inspired by Kubernetes but with our specific requirements in mind.",
+      "summary": "Yandex is one of the largest Russian tech companies which has products ranging from search engine and analytics to ridesharing and delivery apps. I worked on the internal cloud infrastructure, building a company-wide platform for software deployment and network configuration, inspired by Kubernetes but with our specific requirements in mind.<br><strong>Notable achievments</strong>: designed and implemented user-facing features for managing dynamic DNS configurations and TLS certificates.",
       "website": "https://yandex.com/company/",
       "name": "Yandex",
       "location": "Moscow, Russia",
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "summary": "I was hired as a contractor on an internal R&D project for 3D-scanning and computer vision. I helped design and build the MVP based on micro-services written in Go, C++, and Python, as well as maintaned and improved our build pipeline.",
+      "summary": "I was hired as a contractor on an internal R&D project for 3D-scanning and computer vision. I helped design and build the MVP based on micro-services written in Go, C++, and Python, as well as maintaned and improved our build pipeline.<br><strong>Notable achievments</strong>: designed the MVP architecture, implemented reproducible builds.",
       "website": "https://www.linkedin.com/company/hp/",
       "name": "HP",
       "location": "Remote",
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "summary": "Kaspersky is one of the world's leading antivirus and network security companies. I worked on the fraud prevention service deployed in multiple banks. Initially I was responsible for QA automation and site reliability, and then transitioned into backend development and deployment infrastructure.",
+      "summary": "Kaspersky is one of the world's leading antivirus and network security companies. I worked on the fraud prevention service deployed in multiple banks. Initially I was responsible for QA automation and site reliability, and then transitioned into backend development and deployment infrastructure.<br><strong>Notable achievments</strong>: implemented robust overnight e2e regression testing with custom reporting, code coverage, and statistics.",
       "website": "https://www.kaspersky.ca/",
       "name": "Kaspersky Lab",
       "location": "Moscow, Russia",
@@ -99,7 +99,7 @@
       ]
     },
     {
-      "summary": "Our team worked on developing and certifying firmware for a large microcontroller manufacturer, implementing support for the IEEE 802.15.4 standard (low-rate wireless networks for IoT devices, such as ZigBee/ZHA/RF4CE). I developed the framework that orchestrated running certification tests for multi-device configurations.",
+      "summary": "Our team worked on developing and certifying firmware for a large microcontroller manufacturer, implementing support for the IEEE 802.15.4 standard (low-rate wireless networks for IoT devices, such as ZigBee/ZHA/RF4CE). I developed the framework that orchestrated running certification tests for multi-device configurations.<br><strong>Notable achievments</strong>: drastically reduced hardware testing time without losing any functionality, eliminating a lot of common crashes.",
       "website": "https://www.luxoft.com/",
       "name": "Luxoft",
       "location": "Moscow, Russia",

@@ -10,7 +10,6 @@ mixin section-header(website, name, startDate, endDate, icon, subhead)
             if website
               a(href=website, target="_blank")
                 | #{name}
-                i.fa.fa-arrow-up-right-from-square(aria-hidden="true")
             else
               | #{name}
           h4.bold().section_subtitle

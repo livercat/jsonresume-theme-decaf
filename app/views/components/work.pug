@@ -5,7 +5,7 @@ if resume.work && resume.work.length
       div.item
         +section-header(work.website, work.name, work.startDate, work.endDate, work.icon, work.position)
         if work.summary
-          p.summary= work.summary
+          p.summary !{work.summary.replaceAll('\\n', '<br>')}
         if work.highlights && work.highlights.length
           ul
             each highlight in work.highlights

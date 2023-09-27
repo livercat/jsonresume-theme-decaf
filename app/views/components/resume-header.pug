@@ -3,6 +3,10 @@ if resume.basics
     .profile-header.pull-left
       h1 #{resume.basics.name}
       h2 #{resume.basics.label}
+    div.profile-header.pull-right.hide-on-print
+      a(href=`${'resume_' + resume.basics.name.toLowerCase().split(' ').join('_') + '.pdf'}`, target="_blank", download)
+        i.fa(class='fa-light fa-download')
+        span  PDF version
     if resume.basics.picture
       img.profile-pic.hide-on-print(src=resume.basics.picture alt="picture")
     if resume.basics.qr_code
