@@ -30,13 +30,12 @@ This was originally forked from [kelyvin/jsonresume-theme-caffeine](https://gith
 This project uses [gulp](http://gulpjs.com/) for all of its internal build processes.
 
 ## Quick Commands
-- `yarn dev` 
+- `npm run dev` 
   - Run the build and generate a resume html page for development, also generates the pdf
-- `yarn build` 
+- `npm run build` 
   - Exports the resume into a `resume.pdf` file and to an html file
-- `yarn clean`
+- `npm run clean`
   - clean the output folders 
-- `yarn test`
 
 ## Printing
   
@@ -56,9 +55,9 @@ This theme environment comes equipped with the following features to make your d
 
 ```bash
 # install deps
-yarn install
+npm install
 # run it with hot reload
-yarn dev
+npm run dev
 ```
 
 Running the command above will automatically build your project, load your resume with the theme, listen for changes, and automatically refresh the browser on file changes. A `resume.json` will be created for you by default against the `resume-sample.json` if you do not provide a `resume.json` at the root directory level.
@@ -76,7 +75,7 @@ basics.tagline
 work[].index
 
 ## Building the project
-When you run `yarn build` or choose to manually build the project using `gulp`, it will generate a `/public` folder. This folder will be created after running the appropritae gulp tasks against the `/app` folder. Essentially, the app folder is your development environment and the public folder will be what we deploy to production. The public folder is exactly the same as the public folder generated from the jsonresume-theme-boilerplate, thus, our `index.js` will still run against this folder. (this is for re-integration with resumecli)
+When you run `npm run build` or choose to manually build the project using `gulp`, it will generate a `/public` folder. This folder will be created after running the appropritae gulp tasks against the `/app` folder. Essentially, the app folder is your development environment and the public folder will be what we deploy to production. The public folder is exactly the same as the public folder generated from the jsonresume-theme-boilerplate, thus, our `index.js` will still run against this folder. (this is for re-integration with resumecli)
 
 Alternatively, you can also do a **print page** on the browser and save it as as PDF (by setting margins to none and removing header/footers.)
 

@@ -1,9 +1,11 @@
 import gulp from "gulp";
 import path from "path";
+import puppeteer from "puppeteer";
+import tap from "gulp-tap";
 
 export const htmlToPdf = async () =>
   new Promise((resolve, reject) => gulp.src("public/resume.html")
-    .pipe(tap(async (file) => {
+  .pipe(tap(async (file) => {
       const browser = await puppeteer.launch({headless: "new"});
       const page = await browser.newPage();
       await page.goto("file://" + file.path);
@@ -11,12 +13,8 @@ export const htmlToPdf = async () =>
       // https://pptr.dev/api/puppeteer.pdfoptions
       await page.pdf({
         path: 'public/' + path.basename(file.basename, ".html") + ".pdf",
-        // printBackground: true,
-        // omitBackground: true,
         format: 'Letter'
       });
-
-      // await page.screenshot({ path: 'public/' + path.basename(file.basename, ".html") + ".png", fullPage: true});
 
       await browser.close();
       resolve();
@@ -24,7 +22,6 @@ export const htmlToPdf = async () =>
     .on('error', reject))
 
 
-//
 gulp.task('pdf', htmlToPdf);
 
 export default htmlToPdf;

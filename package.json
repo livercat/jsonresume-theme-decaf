@@ -17,27 +17,27 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "yarn gulp dev",
-    "test": "jest",
-    "build": "yarn gulp build",
-    "clean": "yarn gulp clean"
+    "dev": "gulp dev",
+    "build": "gulp build",
+    "clean": "gulp clean"
   },
   "devDependencies": {
-    "browser-sync": "^2.29.1",
-    "del": "^7.0.0",
+    "browser-sync": "^2.29.3",
+    "del": "^7.1.0",
     "gulp": "^4.0.2",
-    "gulp-cli": "^2.2.0",
+    "gulp-cli": "^2.3.0",
     "gulp-cssimport": "^7.0.0",
-    "gulp-plumber": "^1.1.0",
+    "gulp-plumber": "^1.2.1",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
-    "gulp-size": "^3.0.0",
-    "prince": "^1.9.14",
+    "gulp-size": "^4.0.1",
+    "gulp-tap": "^2.0.0",
     "pug": "^3.0.2",
-    "sass": "^1.62.0"
+    "puppeteer": "^21.3.5",
+    "sass": "^1.68.0"
   },
   "dependencies": {
-    "luxon": "^3.3.0",
-    "resume-cli": "2.2.4"
+    "luxon": "^3.4.3",
+    "resume-cli": "^3.0.8"
   }
 }
