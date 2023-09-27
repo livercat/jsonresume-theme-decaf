@@ -3,32 +3,16 @@ html
   head
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, user-scalable=no, minimal-ui")
-    // TODO: extract these OG/Twitter tags to a partial
     - let shortTitle = `${resume.basics.name.split(' ')[0] + '\'s ' + 'Resume'}`
     meta(property='og:title' content=shortTitle)
     meta(property='og:description' content=`${resume.basics.tagline}`)
     meta(property='og:image' content=`${resume.basics.og_image}`)
-    meta(name='twitter:card' content='summary_large_image')
-    //meta(name='twitter:site' content='@digitalocean')
-    meta(name='twitter:title' content=shortTitle)
-    meta(name='twitter:description' content=`${resume.basics.tagline}`)
-    meta(name='twitter:image' content=`${resume.basics.og_image}`)
     title #{shortTitle}
     link(rel="icon" type="image/jpg" href="/images/favicon.jpg")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.min.css")
-    link(rel="stylesheet", href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css")
     link(rel="stylesheet", href="styles/main.css")
     script(src="resume.js" type="module")
-    // Google tag (gtag.js)
-    script(async='' src=`https://www.googletagmanager.com/gtag/js?id=${resume.basics.ga_tag}`)
-    script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){ dataLayer.push(arguments); }
-      gtag("js", new Date());
-      gtag("config", "#{resume.basics.ga_tag}");
-    //style
-    //  include ../styles/main.css
   body
     main#resume.page
       include partials/title
