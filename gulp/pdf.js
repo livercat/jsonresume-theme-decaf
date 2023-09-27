@@ -1,5 +1,3 @@
-import tap from "gulp-tap";
-import puppeteer from "puppeteer";
 import gulp from "gulp";
 import path from "path";
 

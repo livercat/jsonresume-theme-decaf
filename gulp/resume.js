@@ -4,7 +4,6 @@ import gulpPug from 'gulp-pug';
 import gulpSize from 'gulp-size';
 import plumber from "gulp-plumber";
 import * as utils from '../app/pug_utils.js';
-// import memo from 'lodash';
 
 const getResumeData = (path) => {
   const file = fs.readFileSync(path, "utf8")

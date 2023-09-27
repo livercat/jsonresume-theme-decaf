@@ -1,0 +1,16 @@
+# asset directories
+public
+
+# build scripts
+gulpfile.js
+index.js
+
+# configs
+.gitattributes
+.editorconfig
+.*ignore
+.eslintrc
+.jshintrc
+
+# misc
+*.md

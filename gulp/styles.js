@@ -2,7 +2,6 @@ import gulp from 'gulp';
 import cssImport from 'gulp-cssimport';
 import gulpSass from 'gulp-sass';
 import * as sassCompiler from 'sass'
-// import sassCompiler from 'sass'
 import plumber from "gulp-plumber";
 
 const sass = gulpSass(sassCompiler);

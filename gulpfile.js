@@ -20,10 +20,8 @@ const watch = () => {
     ],
     gulp.series(tasks.resume, tasks.pdf, reload)
   );
-  gulp.watch('app/**/*.ts', gulp.series(tasks.typescript, reload));
 };
 
-// @ts-ignore
 const serve = (done) => {
   bs.init({
     server: './public',

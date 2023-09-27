@@ -5,6 +5,7 @@
   }
 
   .page {
+    transform: none !important;
     width: 100%;
     height: 100%;
     //top, right, bottom, left
@@ -13,9 +14,9 @@
     box-shadow: none;
   }
 
-  .summary {
-    width: 54%;
-  }
+  // .summary {
+  //   width: 54%;
+  // }
 
   .item {
     page-break-inside: avoid;

@@ -14,18 +14,22 @@
   @include clearfix();
 }
 
+.resume-content {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+ }
 
-.left-column {
-  float: left;
-  width: $aside-width;
-  margin-right: $aside-margin;
-  word-wrap: break-word;
-}
+// .left-column {
+//   float: left;
+//   width: $aside-width;
+//   margin-right: $aside-margin;
+//   word-wrap: break-word;
+// }
 
-.right-column {
-  width: auto;
-  overflow: hidden;
-}
+// .right-column {
+//   width: auto;
+//   overflow: hidden;
+// }
 
 .item {
   margin-bottom: spacing(1);
