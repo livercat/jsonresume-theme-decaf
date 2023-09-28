@@ -52,6 +52,21 @@
   },
   "work": [
     {
+      "summary": "Fair Compute is aimed at democratizing access to AI compute for small startups and individual researchers. I helped to bootstrap the project, working on the API server and managing the release pipeline.",
+      "website": "https://faircompute.com",
+      "name": "Fair Compute",
+      "location": "Remote",
+      "position": "Startup Developer",
+      "startDate": "2023-03-01",
+      "endDate": "2023-09-01",
+      "highlights": [
+        "Rust",
+        "Typescript",
+        "Software Architecture",
+        "Distributed Computing"
+      ]
+    },
+    {
       "summary": "Yandex is one of the largest Russian tech companies which has products ranging from search engine and analytics to ridesharing and delivery apps. I worked on the internal cloud infrastructure, building a company-wide platform for software deployment and network configuration, inspired by Kubernetes but with our specific requirements in mind.<br><strong>Notable achievments</strong>: designed and implemented user-facing features for managing dynamic DNS configurations and TLS certificates.",
       "website": "https://yandex.com/company/",
       "name": "Yandex",
