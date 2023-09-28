@@ -1,19 +1,28 @@
 .page {
   background: white;
-  width: 50%;
+  // width: 50%;
   display: block;
-  margin: 0 20%;
-  border-top: 10px solid $primary-color;
   // top, right, bottom, left.
   padding: 20px 12px 12px 12px;
+  margin: 0 20%;
+  border-top: 10px solid $primary-color;
   @include shadow();
   @include clearfix();
   font-size: 125%;
+  
+  @include mobile {
+    padding: 5px;
+    margin: 0;
+  }
 }
 
 .resume-content {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 215px 1fr;
+  
+  @include mobile {
+    display: block;
+  }
  }
 
 .item {
@@ -22,10 +31,4 @@
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-a {
-  text-decoration-line: underline;
-  text-decoration-style: line;
-  text-decoration-thickness: 0.5px;
 }

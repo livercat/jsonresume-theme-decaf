@@ -102,6 +102,11 @@ h1 {
   font-size: 250%;
   letter-spacing: 1px;
 }
+@media (max-width: 650px) {
+  h1 {
+    font-size: 200%;
+  }
+}
 
 h2 {
   font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
@@ -109,6 +114,11 @@ h2 {
   font-size: 200%;
   letter-spacing: 0.5px;
   font-weight: 300;
+}
+@media (max-width: 650px) {
+  h2 {
+    font-size: 180%;
+  }
 }
 
 h3 {
@@ -153,7 +163,9 @@ h6.italic {
 
 a {
   color: inherit;
-  text-decoration: inherit;
+  text-decoration-line: underline;
+  text-decoration-style: line;
+  text-decoration-thickness: 0.5px;
 }
 a:hover {
   color: #2895F1;
@@ -224,6 +236,11 @@ ul.two-column li {
   margin: 2px 0 5px;
   border-top: 1px solid #436d66;
 }
+@media (max-width: 650px) {
+  .keyline {
+    border-top: 2px solid #436d66;
+  }
+}
 
 .pull-left {
   float: left;
@@ -246,11 +263,10 @@ ul.two-column li {
 /* Layouts */
 .page {
   background: white;
-  width: 50%;
   display: block;
+  padding: 20px 12px 12px 12px;
   margin: 0 20%;
   border-top: 10px solid #436d66;
-  padding: 20px 12px 12px 12px;
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
@@ -261,10 +277,21 @@ ul.two-column li {
   display: table;
   clear: both;
 }
+@media (max-width: 650px) {
+  .page {
+    padding: 5px;
+    margin: 0;
+  }
+}
 
 .resume-content {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 215px 1fr;
+}
+@media (max-width: 650px) {
+  .resume-content {
+    display: block;
+  }
 }
 
 .item {
@@ -272,12 +299,6 @@ ul.two-column li {
 }
 .item:last-child {
   margin-bottom: 0;
-}
-
-a {
-  text-decoration-line: underline;
-  text-decoration-style: line;
-  text-decoration-thickness: 0.5px;
 }
 
 @media print {
