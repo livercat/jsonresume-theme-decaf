@@ -18,6 +18,6 @@ mixin section-header(website, name, startDate, endDate, icon, subhead)
             span.startDate #{startDate.split('-')[0] + '-' + startDate.split('-')[1]}
             if endDate
               span.endDate
-                |  - #{endDate.split('-')[0] + '-' + endDate.split('-')[1] + ' (' + humanDuration(startDate, endDate) + ')'}
+                |  &mdash; #{endDate.split('-')[0] + '-' + endDate.split('-')[1] + ' (' + humanDuration(startDate, endDate) + ')'}
             else
               span.endDate  - Present
