@@ -18,26 +18,6 @@
 @import 'components/education';
 @import 'components/skills';
 
-.section-header {
-  .section_icon {
-    margin-right: 10px;
-    margin-left: 5px;
-
-    img {
-      width: 20px;
-      height: 20px;
-    }
-  }
-}
-
-.work-container, .education-container {
-
-  ul {
-    margin: 5px 0 0 10px
-  }
-
-}
-
 .hide-on-print {
   @media print {
     visibility: hidden;

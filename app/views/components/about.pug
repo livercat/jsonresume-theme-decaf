@@ -1,8 +1,6 @@
 if resume.basics
   .container.about-container
     +title('About', 'fa-regular fa-address-card')
-    if location
-      +info-tag(url, icon, resume.basics.location.state)
     if resume.basics.email
       +info-tag('mailto:' + resume.basics.email, "fa-regular fa-envelope", resume.basics.email)
     if resume.basics.phone
@@ -12,3 +10,5 @@ if resume.basics
     if resume.basics.profiles
       each profile in resume.basics.profiles
         +social(profile.network, profile.username, profile.url)
+    if resume.basics.location
+      +info-tag(null, "fa-light fa-location-dot", resume.basics.location.city + ', ' + resume.basics.location.region)

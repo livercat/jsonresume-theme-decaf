@@ -21,7 +21,7 @@
         "Javascript / Typescript",
         "Angular / React"
       ],
-      "level": "Intermediate",
+      "level": "Mid",
       "name": "Frontend"
     }
   ],
@@ -34,7 +34,8 @@
     "og_image": "https://raw.githubusercontent.com/livercat/livercat.github.io/main/og_image.jpg",
     "location": {
       "city": "Vancouver",
-      "countryCode": "CA"
+      "region": "BC",
+      "country": "Canada"
     },
     "profiles": [
       {

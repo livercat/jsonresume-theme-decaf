@@ -12,9 +12,9 @@ mixin section-header(website, name, startDate, endDate, icon, subhead)
                 | #{name}
             else
               | #{name}
-          h4.bold().section_subtitle
+          h4.bold.section_subtitle
             | #{subhead}
-          h6.italic()
+          h6.italic
             span.startDate #{startDate}
             if endDate
               span.endDate

@@ -60,6 +60,33 @@ body {
   color: #39424B;
 }
 
+.summary {
+  font-size: 90%;
+}
+
+ul.summary {
+  font-size: 110%;
+}
+
+.section-header .section_icon {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.section-header .section_icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.work-container ul, .education-container ul {
+  margin: 5px 0 0 5px;
+}
+.work-container li, .education-container li {
+  margin-bottom: -5px;
+}
+.work-container .summary, .education-container .summary {
+  margin-left: 15px;
+}
+
 h1,
 h2,
 h3,
@@ -72,14 +99,14 @@ h6 {
 h1 {
   font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  font-size: 25.2px;
+  font-size: 250%;
   letter-spacing: 1px;
 }
 
 h2 {
   font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 200%;
   letter-spacing: 0.5px;
   font-weight: 300;
 }
@@ -87,7 +114,7 @@ h2 {
 h3 {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 16.8px;
+  font-size: 120%;
   letter-spacing: 0.4px;
 }
 h3.bold {
@@ -97,16 +124,19 @@ h3.bold {
 h4 {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 12.6px;
+  font-size: 100%;
 }
 h4.bold {
-  font-weight: 500;
+  font-weight: 600;
+}
+h4.minimal {
+  font-size: 90%;
 }
 
 h5 {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 11.55px;
+  font-size: 80%;
 }
 h5.italic {
   font-style: italic;
@@ -115,7 +145,7 @@ h5.italic {
 h6 {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 10.5px;
+  font-size: 60%;
 }
 h6.italic {
   font-style: italic;
@@ -131,11 +161,11 @@ a:hover {
 
 p,
 li {
-  font-size: 11.55px;
+  font-size: 75%;
 }
 
 blockquote {
-  font-size: 11.55px;
+  font-size: 75%;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: italic;
@@ -216,8 +246,7 @@ ul.two-column li {
 /* Layouts */
 .page {
   background: white;
-  width: 795.6px;
-  min-height: 1029.6px;
+  width: 50%;
   display: block;
   margin: 0 20%;
   border-top: 10px solid #436d66;
@@ -225,6 +254,7 @@ ul.two-column li {
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  font-size: 125%;
 }
 .page:after {
   content: "";
@@ -260,6 +290,7 @@ a {
     height: 100%;
     margin: 0 8px 0 8px;
     box-shadow: none;
+    font-size: 100%;
   }
   .item {
     page-break-inside: avoid;
@@ -282,33 +313,20 @@ a {
 }
 /* Components */
 .info-tag-container .fa {
-  font-size: 14.7px;
   width: 12px;
   margin-right: 5px;
   text-align: center;
   vertical-align: middle;
 }
-.info-tag-container .fa.fa-map-marker {
-  font-size: 16.8px;
-}
-.info-tag-container .fa.fa-mobile {
-  font-size: 18.9px;
-}
-.info-tag-container .fa.fa-envelope-o {
-  font-size: 12.6px;
-}
-.info-tag-container .fa.fa-desktop {
-  font-size: 11.55px;
-}
 .info-tag-container .info-text {
-  font-size: 10.5px;
+  font-size: 80%;
   display: inline-block;
   vertical-align: middle;
   width: 159px;
 }
 
 .references-container .fa {
-  font-size: 14.7px;
+  font-size: 150%;
 }
 
 .education-container .location {
@@ -327,7 +345,7 @@ a {
   margin: 5px auto;
 }
 .skills-container li {
-  font-size: 10px;
+  font-size: 80%;
 }
 
 .skills {
@@ -335,19 +353,6 @@ a {
 }
 .skills h4 {
   font-weight: bold;
-}
-
-.section-header .section_icon {
-  margin-right: 10px;
-  margin-left: 5px;
-}
-.section-header .section_icon img {
-  width: 20px;
-  height: 20px;
-}
-
-.work-container ul, .education-container ul {
-  margin: 5px 0 0 10px;
 }
 
 @media print {

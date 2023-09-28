@@ -7,6 +7,6 @@ if resume.work && resume.work.length
         if work.summary
           p.summary !{work.summary.replaceAll('\\n', '<br>')}
         if work.highlights && work.highlights.length
-          ul
+          ul.summary
             each highlight in work.highlights
               li= highlight
