@@ -65,7 +65,7 @@ body {
 }
 
 ul.summary {
-  font-size: 110%;
+  font-size: 120%;
 }
 
 .section-header .section_icon {
@@ -79,9 +79,6 @@ ul.summary {
 
 .work-container ul, .education-container ul {
   margin: 5px 0 0 5px;
-}
-.work-container li, .education-container li {
-  margin-bottom: -5px;
 }
 .work-container .summary, .education-container .summary {
   margin-left: 15px;
@@ -155,10 +152,11 @@ h5.italic {
 h6 {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 60%;
+  font-size: 70%;
 }
 h6.italic {
   font-style: italic;
+  font-size: 85%;
 }
 
 a {
@@ -197,15 +195,6 @@ ul.minimal {
 }
 ul.minimal li {
   margin-bottom: 2px;
-  padding-left: 0;
-}
-ul.two-column {
-  -webkit-column-count: 2;
-  -webkit-column-gap: 10px;
-  column-count: 2;
-  column-gap: 10px;
-}
-ul.two-column li {
   padding-left: 0;
 }
 

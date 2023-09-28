@@ -15,9 +15,9 @@ mixin section-header(website, name, startDate, endDate, icon, subhead)
           h4.bold.section_subtitle
             | #{subhead}
           h6.italic
-            span.startDate #{startDate}
+            span.startDate #{startDate.split('-')[0] + '-' + startDate.split('-')[1]}
             if endDate
               span.endDate
-                |  - #{endDate}
+                |  - #{endDate.split('-')[0] + '-' + endDate.split('-')[1] + ' (' + humanDuration(startDate, endDate) + ')'}
             else
               span.endDate  - Present

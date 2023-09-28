@@ -11,7 +11,3 @@ if resume.education && resume.education.length
           h5 #{edu.gpa}
         if edu.specialization
           h5.specialization #{edu.specialization}
-        if edu.courses && edu.courses.length
-          ul.two-column
-            each course in edu.courses
-              li #{course}

@@ -4,14 +4,13 @@ import gulpPug from 'gulp-pug';
 import plumber from "gulp-plumber";
 import * as utils from './utils.js';
 
-const getResumeData = (path) => {
+export const getResumeData = (path) => {
   const file = fs.readFileSync(path, "utf8")
   return JSON.parse(file);
 }
 
-export const resumeData = getResumeData("resume.json");
-
 export const resume = async () => {
+  const resumeData = getResumeData("resume.json");
 
   return new Promise((resolve, reject) => {
     gulp.src('./app/views/*.pug')

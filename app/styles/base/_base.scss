@@ -11,7 +11,7 @@ body {
 }
 
 ul.summary {
-  font-size: 110%;
+  font-size: 120%;
 }
 
 .section-header {
@@ -29,9 +29,6 @@ ul.summary {
 .work-container, .education-container {
   ul {
     margin: 5px 0 0 5px
-  }
-  li {
-    margin-bottom: -5px;
   }
   .summary {
     margin-left: 15px;
@@ -102,10 +99,11 @@ h5 {
 
 h6 {
   @include lato();
-  font-size: 60%;
+  font-size: 70%;
 
   &.italic {
     font-style: italic;
+    font-size: 85%;
   }
 }
 
@@ -145,17 +143,6 @@ ul {
 
     li {
       margin-bottom: 2px;
-      padding-left: 0;
-    }
-  }
-
-  &.two-column {
-    -webkit-column-count: 2;
-    -webkit-column-gap: spacing(2);
-    column-count: 2;
-    column-gap: spacing(2);
-
-    li {
       padding-left: 0;
     }
   }
